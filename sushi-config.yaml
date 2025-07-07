@@ -1,0 +1,14 @@
+canonical: http://salud.es/fhir/ImplementationGuide/patient-es
+fhirVersion: 4.0.1
+id: patient-es-ig
+name: PatientEsIG
+title: "Guía de Implementación - Paciente España (Andalucía)"
+status: draft
+version: 0.1.0
+copyrightYear: 2025
+releaseLabel: CI Build
+
+publisher:
+  name: Grupo Andaluz de Rehabilitación Multimodal
+  url: http://salud.es
+  email: contacto@salud.es
