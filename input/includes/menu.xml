@@ -1,0 +1,4 @@
+<menu xmlns="http://hl7.org/fhir">
+  <resource ref="PatientEs"/>
+  <resource ref="patient-nationality"/>
+</menu>

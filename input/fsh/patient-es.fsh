@@ -10,8 +10,15 @@ Description: "Perfil FHIR del recurso Patient adaptado al contexto del Grupo And
 * identifier ^slicing.rules = #open
 * identifier contains nie 1..1 and nuss 1..1
 
+// NIE con tipo SNOMED
 * identifier[nie].system = "http://salud.es/identifiers/nie"
 * identifier[nie].value 1..1 MS
+* identifier[nie].type 1..1 MS
+* identifier[nie].type.coding 1..1 MS
+* identifier[nie].type.coding.system = "http://snomed.info/sct" (exactly)
+* identifier[nie].type.coding.version = "http://snomed.info/sct/900000000000207008/version/20230331" (exactly)
+* identifier[nie].type.coding.code = #1581000122104 (exactly)
+* identifier[nie].type.coding.display = "Número del Documento Nacional de Identidad (entidad observable)" (exactly)
 
 * identifier[nuss].system = "http://salud.es/identifiers/nuss"
 * identifier[nuss].value 1..1 MS
@@ -19,6 +26,7 @@ Description: "Perfil FHIR del recurso Patient adaptado al contexto del Grupo And
 * name 1..1 MS
 * name.use = #official
 * gender 1..1 MS
+* gender from http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1 (required)
 * birthDate 1..1 MS
 
 * telecom 2..2 MS
