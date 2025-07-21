@@ -10,7 +10,7 @@ Description: "Perfil FHIR del recurso Patient adaptado al contexto del Grupo And
 * identifier ^slicing.rules = #open
 * identifier contains nie 1..1 and nuss 1..1
 
-// NIE con tipo SNOMED
+// NIE con terminología semántica SNOMED
 * identifier[nie].system = "http://salud.es/identifiers/nie"
 * identifier[nie].value 1..1 MS
 * identifier[nie].type 1..1 MS
